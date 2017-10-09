@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="TxF-Gh-rdj">
             <objects>
-                <viewController id="PsQ-a3-H8d" userLabel="Login View Controller" sceneMemberID="viewController">
+                <viewController id="PsQ-a3-H8d" userLabel="Login View Controller" customClass="LoginViewController" customModule="TaxiSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G1s-9g-Gls">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,20 +38,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMN-Uc-Jog">
-                                <rect key="frame" x="92" y="318" width="190" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign in"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1G-w3-aQ9">
                                 <rect key="frame" x="92" y="356" width="190" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign up"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signupDidTouch:" destination="PsQ-a3-H8d" eventType="touchUpInside" id="pdN-76-FOP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMN-Uc-Jog">
+                                <rect key="frame" x="92" y="319" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginDidTouch:" destination="PsQ-a3-H8d" eventType="touchUpInside" id="kDQ-mq-8VC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Z1c-sw-fRP"/>
+                        <connections>
+                            <outlet property="text" destination="zMN-Uc-Jog" id="jbX-t8-NRd"/>
+                            <outlet property="textFieldLoginEmail" destination="zMN-Uc-Jog" id="Th6-aT-cX0"/>
+                            <outlet property="textFieldLoginPassword" destination="X1G-w3-aQ9" id="iLx-g0-N5N"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="textFieldLoginEmail" destination="zMN-Uc-Jog" id="ut0-Rt-dHk"/>
+                        <outlet property="textFieldLoginPassword" destination="X1G-w3-aQ9" id="JJf-Jl-yI6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYf-Wr-qVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
