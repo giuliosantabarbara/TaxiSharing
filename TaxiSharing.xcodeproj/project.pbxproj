@@ -58,7 +58,7 @@
 		F05AA8EE1F8BBAB300E0A92F /* TaxiSharingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiSharingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05AA8F21F8BBAB300E0A92F /* TaxiSharingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiSharingUITests.swift; sourceTree = "<group>"; };
 		F05AA8F41F8BBAB300E0A92F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F05AA9001F8BBCF200E0A92F /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		F05AA9011F8BBDB800E0A92F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6AAA0D8AF4DB7D0F3CC9D0D /* Pods-TaxiSharingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiSharingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiSharingTests/Pods-TaxiSharingTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,8 +143,8 @@
 				F05AA8D61F8BBAB300E0A92F /* Main.storyboard */,
 				F05AA8D91F8BBAB300E0A92F /* Assets.xcassets */,
 				F05AA8DB1F8BBAB300E0A92F /* LaunchScreen.storyboard */,
+				F05AA9011F8BBDB800E0A92F /* GoogleService-Info.plist */,
 				F05AA8DE1F8BBAB300E0A92F /* Info.plist */,
-				F05AA9001F8BBCF200E0A92F /* GoogleService-Info-2.plist */,
 			);
 			path = TaxiSharing;
 			sourceTree = "<group>";
