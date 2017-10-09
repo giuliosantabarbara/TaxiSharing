@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var textFieldLoginEmail: UIButton!
-    @IBOutlet weak var textFieldLoginPassword: UIButton!
+    @IBOutlet weak var textFieldLoginEmail: UITextField!
+    @IBOutlet weak var textFieldLoginPassword: UITextField!
     
+    let loginToList = "LoginToList"
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
+        Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
                 self.performSegue(withIdentifier: self.loginToList, sender: nil)
             }
@@ -28,7 +31,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginDidTouch(_ sender: UIButton) {
-        FIRAuth.auth()!.signIn(withEmail: textFieldLoginEmail.text!,
+        Auth.auth().signIn(withEmail: textFieldLoginEmail.text!,
                                password: textFieldLoginPassword.text!)
     }
     
@@ -40,9 +43,9 @@ class LoginViewController: UIViewController {
         let saveAction = UIAlertAction(title: "Save",style: .default) { action in
             let emailField = alert.textFields![0]
             let passwordField = alert.textFields![1]
-            FIRAuth.auth()!.createUser(withEmail: emailField.text!,password: passwordField.text!) { user, error in
+            Auth.auth().createUser(withEmail: emailField.text!,password: passwordField.text!) { user, error in
                     if error == nil {
-                        FIRAuth.auth()!.signIn(withEmail: self.textFieldLoginEmail.text!, password: self.textFieldLoginPassword.text!)
+                        Auth.auth().signIn(withEmail: self.textFieldLoginEmail.text!, password: self.textFieldLoginPassword.text!)
                     }
             }
         }

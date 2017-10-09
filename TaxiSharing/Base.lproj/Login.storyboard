@@ -68,8 +68,8 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="textFieldLoginEmail" destination="zMN-Uc-Jog" id="ut0-Rt-dHk"/>
-                        <outlet property="textFieldLoginPassword" destination="X1G-w3-aQ9" id="JJf-Jl-yI6"/>
+                        <outlet property="textFieldLoginEmail" destination="qp1-q0-gOS" id="L7d-LS-Sqj"/>
+                        <outlet property="textFieldLoginPassword" destination="b8d-Ko-PHk" id="fed-1o-PfZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYf-Wr-qVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
