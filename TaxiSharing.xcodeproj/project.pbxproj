@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1A1CFEAB8F0EE7B08820DA97 /* Pods_TaxiSharingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10E286C4F2D3DCD7FD403C0 /* Pods_TaxiSharingUITests.framework */; };
+		A2318E751F8BE92B001B61DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F05AA9011F8BBDB800E0A92F /* GoogleService-Info.plist */; };
+		A23AE2211F8C1EB20024E728 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23AE2201F8C1EB20024E728 /* ChatViewController.swift */; };
+		A2C1B8B01F8C16E6002331E5 /* TravelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1B8AF1F8C16E6002331E5 /* TravelTableViewController.swift */; };
+		A2C1B8B21F8C16FD002331E5 /* Corsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1B8B11F8C16FD002331E5 /* Corsa.swift */; };
+		A2C1B8B41F8C1D89002331E5 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C1B8B31F8C1D89002331E5 /* Chat.storyboard */; };
 		A2E74D951F8BC23100AB7F13 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E74D931F8BC23100AB7F13 /* Login.storyboard */; };
 		A2E74D9A1F8BC36200AB7F13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E74D991F8BC36200AB7F13 /* LoginViewController.swift */; };
-		BB5B412392ED4D625C31E642 /* Pods_TaxiSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289042816802D4016E3AEC14 /* Pods_TaxiSharing.framework */; };
+		BB5B412392ED4D625C31E642 /* Pods_TaxiSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289042816802D4016E3AEC14 /* Pods_TaxiSharing.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F05AA8D31F8BBAB300E0A92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05AA8D21F8BBAB300E0A92F /* AppDelegate.swift */; };
 		F05AA8D51F8BBAB300E0A92F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05AA8D41F8BBAB300E0A92F /* ViewController.swift */; };
 		F05AA8D81F8BBAB300E0A92F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05AA8D61F8BBAB300E0A92F /* Main.storyboard */; };
@@ -44,6 +49,10 @@
 		2FD37BF8D2C02403B2BA8660 /* Pods-TaxiSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiSharing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiSharing/Pods-TaxiSharing.debug.xcconfig"; sourceTree = "<group>"; };
 		465CA55C6BFF5C234ABC8436 /* Pods-TaxiSharingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiSharingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiSharingTests/Pods-TaxiSharingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96EEFB1F46C196DD352C8BC3 /* Pods_TaxiSharingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxiSharingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23AE2201F8C1EB20024E728 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A2C1B8AF1F8C16E6002331E5 /* TravelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewController.swift; sourceTree = "<group>"; };
+		A2C1B8B11F8C16FD002331E5 /* Corsa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corsa.swift; sourceTree = "<group>"; };
+		A2C1B8B31F8C1D89002331E5 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		A2E74D941F8BC23100AB7F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		A2E74D961F8BC29F00AB7F13 /* TaxiSharing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaxiSharing.entitlements; sourceTree = "<group>"; };
 		A2E74D991F8BC36200AB7F13 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +162,10 @@
 				F05AA8DE1F8BBAB300E0A92F /* Info.plist */,
 				A2E74D931F8BC23100AB7F13 /* Login.storyboard */,
 				A2E74D991F8BC36200AB7F13 /* LoginViewController.swift */,
+				A2C1B8AF1F8C16E6002331E5 /* TravelTableViewController.swift */,
+				A2C1B8B11F8C16FD002331E5 /* Corsa.swift */,
+				A2C1B8B31F8C1D89002331E5 /* Chat.storyboard */,
+				A23AE2201F8C1EB20024E728 /* ChatViewController.swift */,
 			);
 			path = TaxiSharing;
 			sourceTree = "<group>";
@@ -296,6 +309,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C1B8B41F8C1D89002331E5 /* Chat.storyboard in Resources */,
+				A2318E751F8BE92B001B61DF /* GoogleService-Info.plist in Resources */,
 				A2E74D951F8BC23100AB7F13 /* Login.storyboard in Resources */,
 				F05AA8DD1F8BBAB300E0A92F /* LaunchScreen.storyboard in Resources */,
 				F05AA8DA1F8BBAB300E0A92F /* Assets.xcassets in Resources */,
@@ -347,6 +362,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TaxiSharing/Pods-TaxiSharing-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -354,6 +371,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -480,9 +499,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C1B8B21F8C16FD002331E5 /* Corsa.swift in Sources */,
 				A2E74D9A1F8BC36200AB7F13 /* LoginViewController.swift in Sources */,
 				F05AA8D51F8BBAB300E0A92F /* ViewController.swift in Sources */,
 				F05AA8D31F8BBAB300E0A92F /* AppDelegate.swift in Sources */,
+				A23AE2211F8C1EB20024E728 /* ChatViewController.swift in Sources */,
+				A2C1B8B01F8C16E6002331E5 /* TravelTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,10 +681,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TaxiSharing/TaxiSharing.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JCS2YSY9A9;
+				DEVELOPMENT_TEAM = 9P8D7T37X4;
 				INFOPLIST_FILE = TaxiSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.unisannio.TaxiShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unisannio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -676,10 +698,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TaxiSharing/TaxiSharing.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JCS2YSY9A9;
+				DEVELOPMENT_TEAM = 9P8D7T37X4;
 				INFOPLIST_FILE = TaxiSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.unisannio.TaxiShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unisannio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

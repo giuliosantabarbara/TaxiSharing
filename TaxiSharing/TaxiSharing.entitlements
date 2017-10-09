@@ -5,6 +5,7 @@
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)com.unisannio.taxisharing</string>
+		<string>$(AppIdentifierPrefix)com.unisannio</string>
 	</array>
 </dict>
 </plist>

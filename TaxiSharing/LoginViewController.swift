@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseAnalytics
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var textFieldLoginEmail: UITextField!
@@ -30,23 +31,30 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func loginDidTouch(_ sender: UIButton) {
+    
+    @IBAction func signInDidTouch(_ sender: Any) {
         Auth.auth().signIn(withEmail: textFieldLoginEmail.text!,
-                               password: textFieldLoginPassword.text!)
+                           password: textFieldLoginPassword.text!)
+        Auth.auth().addStateDidChangeListener() { auth, user in
+            if user != nil {
+                self.performSegue(withIdentifier: self.loginToList, sender: nil)
+            }
+        }
     }
     
-    @IBAction func signupDidTouch(_ sender: Any) {
+    
+    @IBAction func signUpDidTouch(_ sender: Any) {
         let alert = UIAlertController(title: "Register",
-                                      message: "Register",
+                                      message: "Insert username e password below",
                                       preferredStyle: .alert)
         
         let saveAction = UIAlertAction(title: "Save",style: .default) { action in
             let emailField = alert.textFields![0]
             let passwordField = alert.textFields![1]
             Auth.auth().createUser(withEmail: emailField.text!,password: passwordField.text!) { user, error in
-                    if error == nil {
-                        Auth.auth().signIn(withEmail: self.textFieldLoginEmail.text!, password: self.textFieldLoginPassword.text!)
-                    }
+                if error == nil {
+                    Auth.auth().signIn(withEmail: self.textFieldLoginEmail.text!, password: self.textFieldLoginPassword.text!)
+                }
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .default)
@@ -59,6 +67,8 @@ class LoginViewController: UIViewController {
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
+    
+    
 }
 
 extension LoginViewController: UITextFieldDelegate {

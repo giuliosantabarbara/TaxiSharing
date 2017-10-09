@@ -6,8 +6,28 @@
 	<dict>
 		<key>TaxiSharing.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F05AA8CE1F8BBAB300E0A92F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F05AA8E21F8BBAB300E0A92F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F05AA8ED1F8BBAB300E0A92F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
